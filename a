@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+class HelloWorld {
+    
+    public static void main(String[] args) {
+        double a,b,c,d;
+Scanner input= new Scanner(System.in);
+        System.out.print("Enter 25%: ");
+        a=input.nextDouble();
+        System.out.print("Enter 25%: ");
+        b=input.nextDouble();
+        System.out.print("Enter 30%: ");
+        c=input.nextDouble();
+        System.out.print("Enter 20%: ");
+        d=input.nextDouble();
+        
+        double total = a+b+c+d;
+        a = total/4;
+        System.out.println("Avgis: "+a);
+       
+        
