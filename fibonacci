@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+ Scanner input = new Scanner(System.in);
+    int n , firstTerm, secondTerm;
+     System.out.print("How many sequence you want?: ");
+    n = input.nextInt();
+    System.out.print("ENter first number: ");
+    firstTerm = input.nextInt();
+     System.out.print("ENter first number: ");
+    secondTerm = input.nextInt();
+    
+    System.out.println("Fibonacci Series till " + n + " terms:");
+
+    for (int i = 1; i <= n; ++i) {
+      System.out.print(firstTerm + ", ");
+
+      
+      int nextTerm = firstTerm + secondTerm;
+      firstTerm = secondTerm;
+      secondTerm = nextTerm;
+    }
+  }
+}
